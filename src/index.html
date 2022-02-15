@@ -16,115 +16,150 @@
 
       <fieldset>
         <legend>Personal information</legend>
-        <label>
-          Surname:
-          <input type="text" name="surname" autocomplete="off">
-        </label>
+        <div class="input-container">
+          <label>
+            Surname:
+            <input
+            type="text"
+            name="surname"
+            autocomplete="off">
+          </label>
+        </div>
 
-        <label>
-          Name:
-          <input
-          type="text"
-          name="name"
-          minlength="1"
-          maxlength="20"
-          autocomplete="off"
-        >
-        </label>
+        <div class="input-container">
+          <label>
+            Name:
+            <input
+            type="text"
+            name="name"
+            minlength="1"
+            maxlength="20"
+            autocomplete="off">
+          </label>
+        </div>
 
+        <div class="input-container">
+          <label>
+            How old are You?:
+            <input
+            type="number"
+            min="1"
+            max="100"
+            value="12"
+            name="how-old">
+          </label>
+        </div>
 
-        <label>
-          How old are You?:
-          <input
-          type="number"
-          min="1"
-          max="100"
-          value="12"
-          name="howOld"
-        >
-        </label>
+        <div class="input-container">
+          <label>
+            Full date of birth:
+            <input type="date" name="date-of-birth">
+          </label>
+        </div>
 
-        <label>
-          Full date of birth:
-          <input type="date" name="dateOfBirth">
-        </label>
-
-        <label>
-          I accept the term of the agreement
-          <input type="checkbox" name="agreementTerm">
-        </label>
-
+        <div class="input-container">
+          <label>
+            I accept the term of the agreement
+            <input type="checkbox" name="agreement-term">
+          </label>
+        </div>
       </fieldset>
 
       <fieldset>
         <legend>Registration</legend>
-        <label>
-          E-mail:
-          <input
-          type="email"
-          placeholder="email@example.com"
-          name="email"
-          required
-        >
-        </label>
 
-        <label>
-          Password:
-          <input type="password" name="password" required>
-        </label>
+        <div class="input-container">
+          <label>
+            E-mail:
+            <input
+            type="email"
+            placeholder="email@example.com"
+            name="email"
+            autocomplete="off"
+            required>
+          </label>
+        </div>
+
+        <div class="input-container">
+          <label>
+            Password:
+            <input
+            type="password"
+            name="password"
+            autocomplete="off"
+            required>
+          </label>
+        </div>
       </fieldset>
 
       <fieldset>
         <legend>An interesting fact about you!</legend>
-        <label>
-          Do you love cats?
+
+        <div class="input-container">
           <label>
-            <input type="radio" value="Yes" name="cats-love"> Yes
+            Do you love cats?
+            <label>
+              <input type="radio" value="Yes" name="cats-love"> Yes
+            </label>
+            <label>
+              <input type="radio" value="No" name="cats-love"> No
+            </label>
           </label>
+        </div>
+
+        <div class="input-container">
           <label>
-            <input type="radio" value="No" name="cats-love"> No
+            What is your favorite color?
+            <input type="color" name="favorite-color">
           </label>
-        </label>
+        </div>
 
-        <label>
-          What is your favorite color?
-          <input type="color" name="favoriteColor">
-        </label>
+        <div class="input-container">
+          <label>
+            What time do you go to bed?
+            <input type="time" name="time-to-bed">
+          </label>
+        </div>
 
-        <label>
-          What time do you go to bed?
-          <input type="time" name="timeToBed">
-        </label>
+        <div class="input-container">
+          <label>
+            What are your favorite brand of cars?
+            <select name="favorite-cars" multiple>
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
+            </select>
+          </label>
+        </div>
 
-        <label>
-          What are your favorite brand of cars?
-          <select name="favoriteCars" multiple>
-            <option value="BMW">BMW</option>
-            <option value="Audi">Audi</option>
-            <option value="Lada">Lada</option>
-          </select>
-        </label>
-
-        <label>
-          How do you rate our work?
-          <input type="range" name="workRate" value="0">
-        </label>
+        <div class="input-container">
+          <label>
+            How do you rate our work?
+            <input type="range" name="work-rate" value="0">
+          </label>
+        </div>
       </fieldset>
 
       <fieldset>
         <legend>Additional info:</legend>
-        <label>
-          Comments:
-          <textarea name="comments"></textarea>
-        </label>
 
-        <label>
-          Would you recommend us?
-          <select name="wouldRecommend">
-            <option value="yes">yes</option>
-            <option value="no">no</option>
-          </select>
-        </label>
+        <div class="input-container">
+          <label>
+            Comments:
+            <textarea name="comments"></textarea>
+          </label>
+        </div>
+
+        <div class="input-container">
+          <label>
+            Would you recommend us?
+            <select name="would-recommend">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+          </label>
+        </div>
+
       </fieldset>
 
       <button  type="submit">Submit</button>

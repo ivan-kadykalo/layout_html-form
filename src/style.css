@@ -1,9 +1,5 @@
 /* styles go here */
-fieldset > label {
-  display: block;
-}
-
-label:not(:last-of-type) {
+.input-container:not(:last-of-type) {
   margin-bottom: 10px;
 }
 
